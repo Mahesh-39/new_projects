@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-image:linear-gradient(#fa9595, #7b7bff, #a8f8a8);
+        }
+        .registration-form{
+            max-width: 400px;
+            margin:0 auto;
+            padding:20px;
+            border: 1px solid #ccc;
+            font-weight: bold;
+        }
+        h2{
+            text-align: center;
+        }
+        label{
+            display:block;
+            margin-bottom:5px;
+        }
+        input{
+            width:100%;
+            padding:10px;
+            border:1px solid #ccc;
+        }
+        input[type="submit"]{
+            background-color: rgb(5, 216, 231);
+            color:black;
+            font-weight: bold;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="registration-form">
+        <h2>Registration Form </h2>
+        <form>
+            <label for="name">User Name: <input type="text" id="name" name="name" required></label>
+            <label for="mail">Enter Your Email: <input type="email" id="mail" name="mail" required></label>
+            <label for="phone">Enter Your PhoneNo: <input type="number" id="phone" name="phone" required></label>
+            <label for="dob">Enter Your DOB: <input type="date" id="dob" name="dob" required></label>
+            <label for="photo">Upload Your Photo: <input type="file" id="photo" name="photo" required></label>
+            <label for="pass">Enter Your Password: : <input type="password" id="pass" name="pass" required></label>
+            <label for="conpass">Confirm Your Password: <input type="password" id="conpass" name="conpass" required></label>
+           <input type="submit" value="Register">
+        </form>
+    </div>
+</body>
+</html>
